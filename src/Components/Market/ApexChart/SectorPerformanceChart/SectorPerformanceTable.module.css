@@ -1,0 +1,39 @@
+.tableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+  }
+  
+  .performanceTable {
+    border-collapse: collapse;
+    width: 100%;
+    /* max-width: 800px; */
+  }
+  
+  .performanceTable th,
+  .performanceTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .performanceTable th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .performanceTable td {
+    font-size: 16px;
+  }
+  
+  .performanceTable .best {
+    background-color: #a8e6a3; /* Light green */
+    font-weight: bold;
+  }
+  
+  .performanceTable .worst {
+    background-color: #f7a8a8; /* Light red */
+    font-weight: bold;
+  }
+  

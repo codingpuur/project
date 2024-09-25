@@ -1,0 +1,8 @@
+{
+  "/(Mainbody)/dashboards/portfolio/top-traded-commodity/page": "app/(Mainbody)/dashboards/portfolio/top-traded-commodity/page.js",
+  "/(Mainbody)/dashboards/portfolio/most-active-commodity/page": "app/(Mainbody)/dashboards/portfolio/most-active-commodity/page.js",
+  "/(Mainbody)/dashboards/reports/annual-reports/page": "app/(Mainbody)/dashboards/reports/annual-reports/page.js",
+  "/(Mainbody)/dashboards/reports/brokerage-house-views/page": "app/(Mainbody)/dashboards/reports/brokerage-house-views/page.js",
+  "/(Mainbody)/dashboards/shoppingplace/page": "app/(Mainbody)/dashboards/shoppingplace/page.js",
+  "/(Mainbody)/dashboards/markets/commodity/[name]/page": "app/(Mainbody)/dashboards/markets/commodity/[name]/page.js"
+}

@@ -1,0 +1,91 @@
+{
+  "pages": {
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/loading.js"
+    ],
+    "/(pages)/auth/login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(pages)/auth/login/page.js"
+    ],
+    "/(Mainbody)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Mainbody)/layout.js"
+    ],
+    "/(Mainbody)/dashboards/shoppingplace/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Mainbody)/dashboards/shoppingplace/page.js"
+    ],
+    "/(Mainbody)/dashboards/markets/commodity/[name]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Mainbody)/dashboards/markets/commodity/[name]/page.js"
+    ],
+    "/(Mainbody)/dashboards/markets/stockmarket/[name]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(Mainbody)/dashboards/markets/stockmarket/[name]/page.css",
+      "static/chunks/app/(Mainbody)/dashboards/markets/stockmarket/[name]/page.js"
+    ],
+    "/(Mainbody)/chat/chatapp/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Mainbody)/chat/chatapp/page.js"
+    ],
+    "/(Mainbody)/dashboards/portfolio/current-holding/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Mainbody)/dashboards/portfolio/current-holding/page.js"
+    ],
+    "/(Mainbody)/dashboards/portfolio/history/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Mainbody)/dashboards/portfolio/history/page.js"
+    ],
+    "/(Mainbody)/dashboards/portfolio/user-statistics/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Mainbody)/dashboards/portfolio/user-statistics/page.js"
+    ],
+    "/(Mainbody)/dashboards/portfolio/watchlist/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Mainbody)/dashboards/portfolio/watchlist/page.js"
+    ],
+    "/(Mainbody)/dashboards/portfolio/future-hit-map/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Mainbody)/dashboards/portfolio/future-hit-map/page.js"
+    ],
+    "/(Mainbody)/dashboards/portfolio/top-traded-commodity/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Mainbody)/dashboards/portfolio/top-traded-commodity/page.js"
+    ],
+    "/(Mainbody)/dashboards/portfolio/most-active-commodity/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Mainbody)/dashboards/portfolio/most-active-commodity/page.js"
+    ],
+    "/(Mainbody)/dashboards/reports/annual-reports/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Mainbody)/dashboards/reports/annual-reports/page.js"
+    ],
+    "/(Mainbody)/dashboards/reports/brokerage-house-views/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Mainbody)/dashboards/reports/brokerage-house-views/page.js"
+    ]
+  }
+}
