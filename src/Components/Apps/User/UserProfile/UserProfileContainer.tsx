@@ -16,10 +16,10 @@ const UserProfileContainer = () => {
         <div className="user-profile">
           <Row>
             <Profile />
-            <WilliamProfile />
-            <Profile2 />
-            <ProfileDetails />
-            <DetailImg />
+            {/* <WilliamProfile /> */}
+            {/* <Profile2 /> */}
+            {/* <ProfileDetails /> */}
+            {/* <DetailImg /> */}
           </Row>
         </div>
       </Container>

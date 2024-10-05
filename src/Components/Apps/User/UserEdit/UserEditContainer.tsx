@@ -15,7 +15,7 @@ const UserEditContainer = () => {
           <Row>
             <EditMyProfile />
             <EditProfileForm />
-            <AddProjectsAndUpload />
+            {/* <AddProjectsAndUpload /> */}
           </Row>
         </div>
       </Container>

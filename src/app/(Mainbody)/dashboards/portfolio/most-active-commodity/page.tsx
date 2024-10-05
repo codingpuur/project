@@ -51,10 +51,10 @@ export default function Component() {
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />
-                <Bar
+                {/* <Bar
                   dataKey="change"
                   fill={(entry: { change: any }) => (entry.change >= 0 ? '#22c55e' : '#ef4444')}
-                />
+                /> */}
               </BarChart>
             </ResponsiveContainer>
           </div>

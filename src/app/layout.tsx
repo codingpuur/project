@@ -5,6 +5,7 @@ import MainProvider from "./MainProvider";
 import { detectLanguage } from "./i18n/server";
 import { I18nProvider } from "./i18n/i18n-context";
 import ErrorBoundary from "@/Common/ErrorBoundry";
+import './globals.css';
 
 export const metadata: Metadata = {
   title: "Cion - Premium Admin Template",

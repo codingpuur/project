@@ -419,18 +419,18 @@ export const SidebarMenu: SidebarMenuTypes[] = [
 
 
 
-  {
-    title: "F&O",
-    svgIcon: "fo-icon",
-    title1: "F&O",
-    subMenu: [
-      { title: "Individual", link: `/fo/individual`, type: "link" },
-      { title: "Social", link: `/fo/social`, type: "link" }
-    ]
-  },
+  // {
+  //   title: "F&O",
+  //   svgIcon: "fo-icon",
+  //   title1: "F&O",
+  //   subMenu: [
+  //     { title: "Individual", link: `/fo/individual`, type: "link" },
+  //     { title: "Social", link: `/fo/social`, type: "link" }
+  //   ]
+  // },
   {
     title: "Portfolio",
-    svgIcon: "portfolio-icon",
+    svgIcon: "home",
     title1: "Portfolio",
     subMenu: [
       { title: "Current Holding", link: `/dashboards/portfolio/current-holding`, type: "link" },
@@ -449,23 +449,23 @@ export const SidebarMenu: SidebarMenuTypes[] = [
     svgIcon: "news-events-icon",
     title1: "News & Events",
     subMenu: [
-      { title: "News", link: `/news`, type: "link" },
-      { title: "Economic Calendar", link: `/economic-calendar`, type: "link" },
-      { title: "Live Data", link: `/live-data`, type: "link" },
-      { title: "Latest Regulations and Circulars", link: `/regulations`, type: "link" }
+      { title: "News", link: `/dashboards/events/news`, type: "link" },
+      { title: "Economic Calendar", link: `/dashboards/events/economic-callender`, type: "link" },
+      { title: "Live Data", link: `/dashboards/events/live-data`, type: "link" },
+      { title: "Latest Regulations and Circulars", link: `/dashboards/events/latest-regulations`, type: "link" }
     ]
   },
-  {
-    title: "Gamifications",
-    svgIcon: "gamifications-icon",
-    title1: "Gamifications",
-    subMenu: [
-      { title: "TBD with Murli", link: `/gamifications/tbd`, type: "link" }
-    ]
-  },
+  // {
+  //   title: "Gamifications",
+  //   svgIcon: "gamifications-icon",
+  //   title1: "Gamifications",
+  //   subMenu: [
+  //     { title: "TBD with Murli", link: `/gamifications/tbd`, type: "link" }
+  //   ]
+  // },
   {
     title: "Reports",
-    svgIcon: "reports-icon",
+    svgIcon: "to-do",
     title1: "Reports",
     subMenu: [
       { title: "Annual Reports", link: `/dashboards/reports/annual-reports`, type: "link" },
@@ -475,18 +475,18 @@ export const SidebarMenu: SidebarMenuTypes[] = [
   },
   {
     title: "Profile",
-    svgIcon: "profile-icon",
+    svgIcon: "user",
     title1: "Profile",
     subMenu: [
-      { title: "Personal Information", link: `/profile/personal-info`, type: "link" },
-      { title: "Security Settings", link: `/profile/security-settings`, type: "link" },
-      { title: "Preferences", link: `/profile/preferences`, type: "link" },
-      { title: "Payment Gateway", link: `/profile/payment-gateway`, type: "link" }
+      { title: "Personal Information", link: `/dashboards/user/usersedit`, type: "link" },
+      // { title: "Security Settings", link: `/dashboards/user/security-settings`, type: "link" },
+      { title: "Preferences", link: `/dashboards/user/preferences`, type: "link" },
+      // { title: "Payment Gateway", link: `/dashboards/user/payment-gateway`, type: "link" }
     ]
   },
   {
     title: "Learning Corner",
-    svgIcon: "learning-corner-icon",
+    svgIcon: "learning",
     title1: "Learning Corner",
     subMenu: [
       {
@@ -509,7 +509,7 @@ export const SidebarMenu: SidebarMenuTypes[] = [
   },
   {
     title: "Settings",
-    svgIcon: "settings-icon",
+    svgIcon: "settings",
     title1: "Settings",
     subMenu: [
       { title: "Account Settings", link: `/settings/account`, type: "link" },
@@ -519,7 +519,7 @@ export const SidebarMenu: SidebarMenuTypes[] = [
   },
   {
     title: "Help",
-    svgIcon: "help-icon",
+    svgIcon: "help",
     title1: "Help",
     subMenu: [
       { title: "FAQs", link: `/help/faqs`, type: "link" },
@@ -529,14 +529,14 @@ export const SidebarMenu: SidebarMenuTypes[] = [
       { title: "Chatbot", link: `/help/chatbot`, type: "link" }
     ]
   },
-  {
-    title: "Fingenie",
-    svgIcon: "fingenie-icon",
-    title1: "Fingenie",
-    subMenu: [
-      { title: "Fingenie Home", link: `/fingenie`, type: "link" }
-    ]
-  }
+  // {
+  //   title: "Fingenie",
+  //   svgIcon: "fingenie-icon",
+  //   title1: "Fingenie",
+  //   subMenu: [
+  //     { title: "Fingenie Home", link: `/fingenie`, type: "link" }
+  //   ]
+  // }
 ];
 
 export const BookMarkedData = [
