@@ -9,6 +9,8 @@ import { setToggleSidebar } from "@/Redux/Reducer/LayoutSlice";
 import { addSidebarLayouts } from "@/Redux/Reducer/ThemeCustomizerSlice";
 import { useEffect, useState } from "react";
 import { ToastContainer } from "react-toastify";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState<boolean>(false);

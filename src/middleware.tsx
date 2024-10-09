@@ -25,7 +25,7 @@ export function middleware(request: NextRequest) {
 
   // Allow access to the root ("/") to display the index.html file in the public folder
   if (path === "/") {
-    return NextResponse.next();
+    return NextResponse.redirect(new URL("/index.html", request.url));
   }
 
   // If not authenticated and not accessing the auth routes, redirect to login

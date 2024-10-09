@@ -7,7 +7,9 @@ import { MenuListInterface } from "../../Types/SideBarTypes";
 
 const MenuList = ({ subMenuData, setIsOpen, isOpen, level }: MenuListInterface) => {
   const { t } = useTranslation("common");
+
   const [close,setClose] = useState(false)
+
   const { sidebarIconType } = useAppSelector((state) => state.themeCustomizer);
   const { layout } = useAppSelector((state) => state.themeCustomizer);
   const handleClick = (item: string) => {

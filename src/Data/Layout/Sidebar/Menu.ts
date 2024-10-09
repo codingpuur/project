@@ -489,22 +489,16 @@ export const SidebarMenu: SidebarMenuTypes[] = [
     svgIcon: "learning",
     title1: "Learning Corner",
     subMenu: [
-      {
-        title: "Beginners",
-        subMenu: [
-          { title: "Flowchart and Trading Terminology", link: `/learning/beginners/flowchart`, type: "link" },
-          { title: "Short Videos", link: `/learning/beginners/videos`, type: "link" }
-        ]
-      },
-      {
-        title: "Advanced",
-        subMenu: [
-          { title: "How to Manage Risks", link: `/learning/advanced/manage-risks`, type: "link" },
-          { title: "How to Manage Capital", link: `/learning/advanced/manage-capital`, type: "link" },
-          { title: "Deciding Options Strike Prices", link: `/learning/advanced/strike-prices`, type: "link" },
-          { title: "Miscellaneous Links", link: `/learning/advanced/misc-links`, type: "link" }
-        ]
-      }
+      // {
+      //   title: "Beginners",
+      //   subMenu: [
+      //     { title: "Flowchart and Trading Terminology", link: `/learning/beginners/flowchart`, type: "link" },
+      //     { title: "Short Videos", link: `/learning/beginners/videos`, type: "link" }
+      //   ]
+      // },
+      { title: "Beginners", link: `/dashboards/learning-corner/beginners`, type: "link" },
+      { title: "Advance", link: `/dashboards/learning-corner/advance`, type: "link" },
+   
     ]
   },
   {
