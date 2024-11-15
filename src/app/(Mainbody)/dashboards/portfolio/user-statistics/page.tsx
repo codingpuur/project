@@ -2,17 +2,23 @@
 
 import React from 'react'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts'
-import { ArrowUpRight, ArrowDownRight, DollarSign, TrendingUp, Users, Award } from "lucide-react"
+import { ArrowUpRight, ArrowDownRight, DollarSign, TrendingUp, Users, Award, IndianRupee } from "lucide-react"
 import { ProgressBar } from 'react-bootstrap'
 
 const data = [
+  { name: 'Aug', value: 6500 },
+  { name: 'Sep', value: 7000 },
+  { name: 'Oct', value: 5500 },
+  { name: 'Nov', value: 6200 },
+  { name: 'Dec', value: 5900 },
   { name: 'Jan', value: 4000 },
   { name: 'Feb', value: 3000 },
   { name: 'Mar', value: 5000 },
   { name: 'Apr', value: 4500 },
   { name: 'May', value: 6000 },
   { name: 'Jun', value: 5500 },
-]
+];
+
 
 export default function UserStatistics() {
   return (
@@ -22,35 +28,20 @@ export default function UserStatistics() {
         <div className="col-md-3">
           <StatCard
             title="Total Balance"
-            value="$12,345"
+            value="₹12,345"
             change={5.67}
-            icon={<DollarSign className="h-4 w-4" />}
+            icon={<IndianRupee className="h-4 w-4" />}
           />
         </div>
         <div className="col-md-3">
           <StatCard
             title="Investments"
-            value="$7,890"
+            value="₹7,890"
             change={-2.34}
             icon={<TrendingUp className="h-4 w-4" />}
           />
         </div>
-        <div className="col-md-3">
-          <StatCard
-            title="Followers"
-            value="1,234"
-            change={10.5}
-            icon={<Users className="h-4 w-4" />}
-          />
-        </div>
-        <div className="col-md-3">
-          <StatCard
-            title="Performance"
-            value="89%"
-            change={3.2}
-            icon={<Award className="h-4 w-4" />}
-          />
-        </div>
+      
       </div>
       <div className="row">
         <div className="col-md-6">
@@ -78,9 +69,9 @@ export default function UserStatistics() {
               <p className="card-text">Asset allocation</p>
               <div className="space-y-3">
                 <ProgressItem label="Stocks" value={60} />
-                <ProgressItem label="Bonds" value={25} />
-                <ProgressItem label="Real Estate" value={10} />
-                <ProgressItem label="Crypto" value={5} />
+                <ProgressItem label="Comodities" value={25} />
+                <ProgressItem label="F&O Derivatives" value={10} />
+                {/* <ProgressItem label="Crypto" value={5} /> */}
               </div>
             </div>
           </div>

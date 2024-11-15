@@ -27,7 +27,7 @@ const LoginPage = () => {
         hideProgressBar: false,
         closeOnClick: true,
       });
-      router.push(`/dashboards/shoppingplace`);
+      router.push(`/dashboards/portfolio/current-holding`);
     } else {
       toast.error("Please Enter valid email or password...!");
     }
@@ -39,7 +39,7 @@ const LoginPage = () => {
           <div className='login-card login-dark'>
             <div>
               <div>
-                <Link className='logo text-center' href={Href}>
+                <Link className='logo text-center' href='/dashboards/portfolio/current-holding'>
                   <img className='img-fluid for-light' src={imageOne.src} alt='looginpage' />
                   <img className='img-fluid for-dark' src={imageTwo.src} alt='looginpage' />
                 </Link>

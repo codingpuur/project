@@ -28,7 +28,7 @@ const MaintenanceContainer = () => {
             <br /> Thank You For Patience
           </h4>
           <div>
-            <Link className='btn btn-primary-gradien btn-lg text-light' href={`/dashboards/shoppingplace`}>
+            <Link className='btn btn-primary-gradien btn-lg text-light' href={`/dashboards/portfolio/current-holding`}>
               {BackToHomePage}
             </Link>
           </div>

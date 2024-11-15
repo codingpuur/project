@@ -17,11 +17,11 @@ const NotificationBox = () => {
           </Link>
         </li>
       ))}
-      <li>
+      {/* <li>
         <Link className="f-w-700" href={`/email/emailapp`}>
           {CheckAll}
         </Link>
-      </li>
+      </li> */}
     </ul>
   );
 };

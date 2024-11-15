@@ -15,12 +15,13 @@ interface WatchlistItem {
 
 export default function Watchlist() {
   const [watchlist, setWatchlist] = useState<WatchlistItem[]>([
-    { id: '1', symbol: 'AAPL', name: 'Apple Inc.', price: 150.25, change: 2.75, changePercent: 1.86 },
-    { id: '2', symbol: 'GOOGL', name: 'Alphabet Inc.', price: 2680.70, change: -15.30, changePercent: -0.57 },
-    { id: '3', symbol: 'MSFT', name: 'Microsoft Corporation', price: 305.94, change: 1.24, changePercent: 0.41 },
-    { id: '4', symbol: 'AMZN', name: 'Amazon.com Inc.', price: 3304.00, change: -23.00, changePercent: -0.69 },
-    { id: '5', symbol: 'TSLA', name: 'Tesla, Inc.', price: 733.80, change: 15.20, changePercent: 2.11 },
-  ])
+    { id: '1', symbol: 'RELIANCE', name: 'Reliance Industries', price: 2550.25, change: -12.75, changePercent: -0.50 },
+    { id: '2', symbol: 'TCS', name: 'Tata Consultancy Services', price: 3450.70, change: 15.30, changePercent: 0.45 },
+    { id: '3', symbol: 'HDFCBANK', name: 'HDFC Bank Ltd.', price: 1610.90, change: 6.40, changePercent: 0.40 },
+    { id: '4', symbol: 'INFY', name: 'Infosys Ltd.', price: 1450.60, change: -10.20, changePercent: -0.70 },
+    { id: '5', symbol: 'ICICIBANK', name: 'ICICI Bank Ltd.', price: 910.50, change: 8.50, changePercent: 0.94 },
+  ]);
+  
 
   const [newSymbol, setNewSymbol] = useState('')
 
@@ -83,7 +84,7 @@ export default function Watchlist() {
                   <tr key={item.id}>
                     <td>{item.symbol}</td>
                     <td>{item.name}</td>
-                    <td className="text-end">${item.price.toFixed(2)}</td>
+                    <td className="text-end">₹{item.price.toFixed(2)}</td>
                     <td className="text-end">
                       <Badge bg={item.change >= 0 ? "success" : "danger"} className="p-2">
                         {item.change >= 0 ? (
@@ -91,7 +92,7 @@ export default function Watchlist() {
                         ) : (
                           <ArrowDownRight className="me-1" size={16} />
                         )}
-                        ${Math.abs(item.change).toFixed(2)} ({Math.abs(item.changePercent).toFixed(2)}%)
+                        ₹{Math.abs(item.change).toFixed(2)} ({Math.abs(item.changePercent).toFixed(2)}%)
                       </Badge>
                     </td>
                     <td>

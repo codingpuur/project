@@ -13,11 +13,11 @@ const RightHeader = () => {
       <ul className='nav-menus'>
         <SearchInput />
         <Notifications />
-        <Bookmark />
+        {/* <Bookmark />
         <Message />
         <Cart />
         <DarkMode />
-        <Language />
+        <Language /> */}
         <UserProfile />
       </ul>
     </div>

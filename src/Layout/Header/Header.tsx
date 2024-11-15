@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <Row className='header-wrapper'>
       <HeaderLogo />
-      <SearchBar />
+      {/* <SearchBar /> */}
       <RightHeader />
     </Row>
   );

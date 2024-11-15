@@ -437,11 +437,11 @@ export const SidebarMenu: SidebarMenuTypes[] = [
       { title: "History", link: `/dashboards/portfolio/history`, type: "link" },
       { title: "User Statistics", link: `/dashboards/portfolio/user-statistics`, type: "link" },
       { title: "Watchlist", link: `/dashboards/portfolio/watchlist`, type: "link" },
-      { title: "Sentiment Analysis", link: `/dashboards/portfolio/sentiment-analysis`, type: "link" },
-      { title: "Suggested Area / Recommendation", link: `/dashboards/portfolio/suggestions`, type: "link" },
-      { title: "Future Hit Map", link: `/dashboards/portfolio/future-hit-map`, type: "link" },
-      { title: "Top Traded Commodity", link: `/dashboards/portfolio/top-traded-commodity`, type: "link" },
-      { title: "Most Active Commodity", link: `/dashboards/portfolio/most-active-commodity`, type: "link" }
+      { title: "Sentiment Analysis", link: `/pages/authentication/maintenance`, type: "link" },
+      { title: "Suggested Area", link: `/dashboards/portfolio/suggestions`, type: "link" },
+      { title: "Future Heat Map", link: `/dashboards/portfolio/future-heat-map`, type: "link" },
+      { title: "Top Traded Com", link: `/dashboards/portfolio/top-traded-commodity`, type: "link" },  
+      { title: "Most Active Com", link: `/dashboards/portfolio/most-active-commodity`, type: "link" }
     ]
   },
   {

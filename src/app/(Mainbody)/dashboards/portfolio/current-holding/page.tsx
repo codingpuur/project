@@ -12,12 +12,24 @@ interface Holding {
   color: string
 }
 
+
 const holdings: Holding[] = [
-  { name: "Apple Inc.", symbol: "AAPL", quantity: 10, currentPrice: 150.25, change: 2.5, color: "#A2D2FF" },
-  { name: "Microsoft Corporation", symbol: "MSFT", quantity: 5, currentPrice: 305.75, change: -1.2, color: "#FEF9EF" },
-  { name: "Amazon.com, Inc.", symbol: "AMZN", quantity: 3, currentPrice: 3302.50, change: 0.8, color: "#FF865E" },
-  { name: "Tesla, Inc.", symbol: "TSLA", quantity: 2, currentPrice: 725.60, change: -3.5, color: "#FEE440" },
-]
+  { name: "Reliance Industries", symbol: "RELIANCE", quantity: 15, currentPrice: 2480.75, change: 1.3, color: "#A2D2FF" },
+  { name: "Tata Consultancy Services", symbol: "TCS", quantity: 10, currentPrice: 3251.20, change: -0.5, color: "#FEF9EF" },
+  { name: "HDFC Bank", symbol: "HDFCBANK", quantity: 20, currentPrice: 1445.50, change: 0.8, color: "#FF865E" },
+  { name: "Infosys Ltd", symbol: "INFY", quantity: 25, currentPrice: 1487.65, change: -1.2, color: "#FEE440" },
+  { name: "ICICI Bank", symbol: "ICICIBANK", quantity: 30, currentPrice: 869.30, change: 2.0, color: "#98DDCA" },
+  { name: "State Bank of India", symbol: "SBIN", quantity: 50, currentPrice: 574.90, change: -0.9, color: "#FFCCB6" },
+  { name: "Bharti Airtel", symbol: "BHARTIARTL", quantity: 40, currentPrice: 701.25, change: 1.5, color: "#FFABAB" },
+  { name: "Asian Paints", symbol: "ASIANPAINT", quantity: 12, currentPrice: 2962.90, change: 0.6, color: "#FFD3B4" },
+  { name: "Hindustan Unilever", symbol: "HINDUNILVR", quantity: 18, currentPrice: 2537.10, change: -1.0, color: "#D4A5A5" },
+  { name: "Axis Bank", symbol: "AXISBANK", quantity: 22, currentPrice: 1188.75, change: 2.3, color: "#FFDA77" },
+  { name: "Larsen & Toubro", symbol: "LT", quantity: 8, currentPrice: 1875.50, change: 0.5, color: "#D9BF77" },
+  { name: "Bajaj Finance", symbol: "BAJFINANCE", quantity: 6, currentPrice: 6795.10, change: -0.8, color: "#BDB2FF" },
+  { name: "ITC Ltd", symbol: "ITC", quantity: 35, currentPrice: 485.75, change: 1.1, color: "#FFC6FF" },
+  { name: "Maruti Suzuki", symbol: "MARUTI", quantity: 4, currentPrice: 9705.00, change: 0.7, color: "#A0C4FF" },
+  { name: "Wipro", symbol: "WIPRO", quantity: 28, currentPrice: 403.60, change: -1.3, color: "#B5E48C" },
+];
 
 export default function EnhancedCurrentHoldings() {
   const totalValue = holdings.reduce((sum, holding) => sum + holding.quantity * holding.currentPrice, 0)
@@ -41,7 +53,7 @@ export default function EnhancedCurrentHoldings() {
             <div className="card-body">
               <div className="mb-4">
                 <h6>Total Value</h6>
-                <p className="display-4">${totalValue.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</p>
+                <p className="display-4">₹{totalValue.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</p>
               </div>
               <table className="table table-hover">
                 <thead>
@@ -66,8 +78,8 @@ export default function EnhancedCurrentHoldings() {
                         </div>
                       </td>
                       <td>{holding.quantity}</td>
-                      <td>${holding.currentPrice.toFixed(2)}</td>
-                      <td>${(holding.quantity * holding.currentPrice).toFixed(2)}</td>
+                      <td>₹{holding.currentPrice.toFixed(2)}</td>
+                      <td>₹{(holding.quantity * holding.currentPrice).toFixed(2)}</td>
                       <td>
                         <span className={`badge ${holding.change >= 0 ? 'bg-success' : 'bg-danger'}`}>
                           {holding.change >= 0 ? '▲' : '▼'} {Math.abs(holding.change)}%

@@ -12,12 +12,13 @@ interface StockSearch {
 
 export default function StockSearchHistory() {
   const [searchHistory, setSearchHistory] = useState<StockSearch[]>([
-    { id: '1', symbol: 'AAPL', name: 'Apple Inc.', lastSearched: new Date('2023-06-10T14:30:00') },
-    { id: '2', symbol: 'GOOGL', name: 'Alphabet Inc.', lastSearched: new Date('2023-06-09T10:15:00') },
-    { id: '3', symbol: 'MSFT', name: 'Microsoft Corporation', lastSearched: new Date('2023-06-08T16:45:00') },
-    { id: '4', symbol: 'AMZN', name: 'Amazon.com Inc.', lastSearched: new Date('2023-06-07T09:20:00') },
-    { id: '5', symbol: 'TSLA', name: 'Tesla, Inc.', lastSearched: new Date('2023-06-06T11:30:00') },
-  ])
+    { id: '1', symbol: 'RELIANCE', name: 'Reliance Industries Ltd.', lastSearched: new Date('2023-06-10T14:30:00') },
+    { id: '2', symbol: 'TCS', name: 'Tata Consultancy Services Ltd.', lastSearched: new Date('2023-06-09T10:15:00') },
+    { id: '3', symbol: 'HDFCBANK', name: 'HDFC Bank Ltd.', lastSearched: new Date('2023-06-08T16:45:00') },
+    { id: '4', symbol: 'INFY', name: 'Infosys Ltd.', lastSearched: new Date('2023-06-07T09:20:00') },
+    { id: '5', symbol: 'ICICIBANK', name: 'ICICI Bank Ltd.', lastSearched: new Date('2023-06-06T11:30:00') },
+]);
+
 
   const [searchTerm, setSearchTerm] = useState('')
 
@@ -48,7 +49,7 @@ export default function StockSearchHistory() {
   )
 
   return (
-    <div className="card w-100 mx-auto">
+    <div className="card w-100 mx-auto" >
       <div className="card-header">
         <h5 className="card-title">Stock Search History</h5>
         <p className="card-text">View and manage your recent stock searches</p>
@@ -79,13 +80,14 @@ export default function StockSearchHistory() {
                 </div>
               </div>
               <div className="d-flex align-items-center">
-                <button className="btn btn-outline-secondary btn-sm me-2">
-                  <ArrowUpRight className="h-4 w-4" />
-                </button>
-                <button className="btn btn-outline-danger btn-sm" onClick={() => handleDelete(item.id)}>
-                  <Trash2 className="h-4 w-4" />
-                </button>
-              </div>
+  <button className="btn btn-outline-success btn-sm me-2" >
+    Buy
+  </button>
+  <button className="btn btn-outline-danger btn-sm" >
+    Sell
+  </button>
+</div>
+
             </div>
           ))}
         </div>
