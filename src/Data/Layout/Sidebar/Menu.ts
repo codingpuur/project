@@ -62,7 +62,7 @@ export const SidebarMenu: SidebarMenuTypes[] = [
   // },
   {
     title: "Markets",
-    svgIcon: "Perk-Ui",
+    svgIcon: "market",
     title1: "Markets",
     subMenu: [
       {
@@ -99,7 +99,7 @@ export const SidebarMenu: SidebarMenuTypes[] = [
     
     title1: "Chat",
   
-    svgIcon: "home",
+    svgIcon: "chat",
           title: "Chat",
           subMenu: [
             {title: "Chat App",link: `/chat/chatapp`,type: "link"},]
@@ -430,7 +430,7 @@ export const SidebarMenu: SidebarMenuTypes[] = [
   // },
   {
     title: "Portfolio",
-    svgIcon: "home",
+    svgIcon: "portfolio",
     title1: "Portfolio",
     subMenu: [
       { title: "Current Holding", link: `/dashboards/portfolio/current-holding`, type: "link" },
@@ -446,7 +446,7 @@ export const SidebarMenu: SidebarMenuTypes[] = [
   },
   {
     title: "News & Events",
-    svgIcon: "news-events-icon",
+    svgIcon: "event",
     title1: "News & Events",
     subMenu: [
       { title: "News", link: `/dashboards/events/news`, type: "link" },
@@ -465,7 +465,7 @@ export const SidebarMenu: SidebarMenuTypes[] = [
   // },
   {
     title: "Reports",
-    svgIcon: "to-do",
+    svgIcon: "report",
     title1: "Reports",
     subMenu: [
       { title: "Annual Reports", link: `/dashboards/reports/annual-reports`, type: "link" },
@@ -475,7 +475,7 @@ export const SidebarMenu: SidebarMenuTypes[] = [
   },
   {
     title: "Profile",
-    svgIcon: "user",
+    svgIcon: "profile",
     title1: "Profile",
     subMenu: [
       { title: "Personal Information", link: `/dashboards/user/usersedit`, type: "link" },
@@ -501,28 +501,28 @@ export const SidebarMenu: SidebarMenuTypes[] = [
    
     ]
   },
-  {
-    title: "Settings",
-    svgIcon: "settings",
-    title1: "Settings",
-    subMenu: [
-      { title: "Account Settings", link: `/settings/account`, type: "link" },
-      { title: "Application Settings", link: `/settings/application`, type: "link" },
-      { title: "Allow Advertisement", link: `/settings/advertisement`, type: "link" }
-    ]
-  },
-  {
-    title: "Help",
-    svgIcon: "help",
-    title1: "Help",
-    subMenu: [
-      { title: "FAQs", link: `/help/faqs`, type: "link" },
-      { title: "Support", link: `/help/support`, type: "link" },
-      { title: "Documentation", link: `/help/documentation`, type: "link" },
-      { title: "Terms & Conditions", link: `/help/terms`, type: "link" },
-      { title: "Chatbot", link: `/help/chatbot`, type: "link" }
-    ]
-  },
+  // {
+  //   title: "Settings",
+  //   svgIcon: "settings",
+  //   title1: "Settings",
+  //   subMenu: [
+  //     { title: "Account Settings", link: `/settings/account`, type: "link" },
+  //     { title: "Application Settings", link: `/settings/application`, type: "link" },
+  //     { title: "Allow Advertisement", link: `/settings/advertisement`, type: "link" }
+  //   ]
+  // },
+  // {
+  //   title: "Help",
+  //   svgIcon: "help",
+  //   title1: "Help",
+  //   subMenu: [
+  //     { title: "FAQs", link: `/help/faqs`, type: "link" },
+  //     { title: "Support", link: `/help/support`, type: "link" },
+  //     { title: "Documentation", link: `/help/documentation`, type: "link" },
+  //     { title: "Terms & Conditions", link: `/help/terms`, type: "link" },
+  //     // { title: "Chatbot", link: `/help/chatbot`, type: "link" }
+  //   ]
+  // },
   // {
   //   title: "Fingenie",
   //   svgIcon: "fingenie-icon",

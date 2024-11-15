@@ -9,6 +9,8 @@ import { useTranslation } from "react-i18next";
 import SVG from "@/utils/CommonSvgIcon/SVG";
 import { SidebarMenu } from "@/Data/Layout/Sidebar/Menu";
 import { PropsTypes } from "@/Types/SideBarTypes";
+import { BotMessageSquare, BriefcaseBusiness, CalendarCheck, ChartCandlestick, ClipboardMinus, UserPen } from "lucide-react";
+import { BookOpen } from "react-feather";
 
 const SidebarMain = ({setOpen,open}:PropsTypes) => {
   const { t } = useTranslation("common");
@@ -24,6 +26,19 @@ const SidebarMain = ({setOpen,open}:PropsTypes) => {
       setOpen(menu !== "" ? true : false)
     }
   }
+
+  const icon:any ={
+    "market":<ChartCandlestick />,
+    "event":<CalendarCheck/>,
+    "portfolio":<BriefcaseBusiness />,
+    "chat": <BotMessageSquare />,
+    "report":   <ClipboardMinus />,
+    "profile":<UserPen />,
+    "learning":<BookOpen />
+
+  }
+
+
   return (
     <nav className="sidebar-main">
       <div id="sidebar-menu">
@@ -33,7 +48,9 @@ const SidebarMain = ({setOpen,open}:PropsTypes) => {
           {SidebarMenu.map((data,index) => (
             <li className={`sidebar-list`} key={index} >
               <Link className={`sidebar-link sidebar-title ${sideMenu === data.title ? "active" : "" }`} href="" onClick={()=>handleClick(data)}>
-                <SVG className={`${sidebarIconType}-icon`} iconId={`${sidebarIconType === "fill" ? "fill-" : ""}${data.svgIcon}`} />
+                {/* <SVG className={`${sidebarIconType}-icon`} iconId={`${sidebarIconType === "fill" ? "fill-" : ""}${data.svgIcon}`} /> */}
+                {icon[data?.svgIcon || 'market']}
+             
                 <span>{t(data.title)}</span>
               </Link>
               <ul className= "sidebar-submenu custom-scrollbar simple-list"

@@ -42,10 +42,25 @@
         </g>
     </symbol>
 
+    <symbol id="event" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 2v4"/>
+    <path d="M16 2v4"/>
+    <rect width="18" height="18" x="3" y="4" rx="2"/>
+    <path d="M3 10h18"/>
+    <path d="m9 16 2 2 4-4"/>
+</symbol>
+
     <symbol id="moon" viewBox="0 0 18 22" xmlns="http://www.w3.org/2000/svg">
         <path d="M5.18916 17.0409V15.8811C2.88962 14.4914 1 11.7819 1 8.9025C1 3.95349 5.54909 0.0742673 10.6881 1.19404C12.9476 1.69394 14.9272 3.19364 15.957 5.26323C18.0466 9.46239 15.847 13.9215 12.6177 15.8711V17.0309C12.6177 17.3208 12.7276 17.9907 11.6579 17.9907H6.14897C5.04919 18.0007 5.18916 17.5708 5.18916 17.0409Z" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         <path opacity="0.4" d="M5.38867 21.0001C7.67821 20.3502 10.0977 20.3502 12.3873 21.0001" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+    <symbol id="report" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 2H16C17.1 2 18 2.9 18 4V20C18 21.1 17.1 22 16 22H8C6.9 22 6 21.1 6 20V4C6 2.9 6.9 2 8 2Z"/>
+    <path d="M8 6H16"/>
+    <path d="M10 10H14"/>
+    <path d="M10 14H14"/>
+</symbol>
+
 
     <symbol id="notification" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path opacity="0.4" d="M10 5.3667V8.1417" stroke-opacity="0.8" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>

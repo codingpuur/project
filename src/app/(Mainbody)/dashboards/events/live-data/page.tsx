@@ -66,21 +66,26 @@ export default function LiveMarketData() {
       setInstruments(prevInstruments => {
         const updatedInstruments = { ...prevInstruments };
         Object.keys(updatedInstruments).forEach(category => {
-          updatedInstruments[category as InstrumentCategory] = updatedInstruments[category as InstrumentCategory].map(instrument => ({
-            ...instrument,
-            price: instrument.price * (1 + (Math.random() - 0.5) * 0.002),
-            change: instrument.price * (Math.random() - 0.5) * 0.002,
-            changePercent: (instrument.changePercent + (Math.random() - 0.5) * 0.1),
-            bid: instrument.bid * (1 + (Math.random() - 0.5) * 0.001),
-            ask: instrument.ask * (1 + (Math.random() - 0.5) * 0.001),
-          }))
-        })
+          updatedInstruments[category as InstrumentCategory] = updatedInstruments[category as InstrumentCategory].map(instrument => {
+            const newPrice = instrument.price * (1 + (Math.random() - 0.5) * 0.002);
+            const change = newPrice - instrument.price;
+            return {
+              ...instrument,
+              price: newPrice,
+              change,
+              changePercent: (change / instrument.price) * 100,
+              bid: instrument.bid * (1 + (Math.random() - 0.5) * 0.001),
+              ask: instrument.ask * (1 + (Math.random() - 0.5) * 0.001),
+            };
+          });
+        });
         return updatedInstruments;
-      })
+      });
     }, 2000); // Update every 2 seconds
-
+  
     return () => clearInterval(interval);
   }, []);
+  
 
   return (
     <Card className="w-full max-w-4xl">

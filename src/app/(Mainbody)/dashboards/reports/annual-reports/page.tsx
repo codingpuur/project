@@ -116,10 +116,10 @@ export default function AdvancedAnnualReports() {
                       <li><strong>Market Cap: </strong>{formatCurrency(report.marketCap)}</li>
                     </ul>
                   </Card.Body>
-                  <Card.Footer className="d-flex justify-content-between">
+                  {/* <Card.Footer className="d-flex justify-content-between">
                     <Button variant="outline-primary">View</Button>
                     <Button variant="outline-secondary">Download</Button>
-                  </Card.Footer>
+                  </Card.Footer> */}
                 </Card>
               </div>
             ))}
@@ -138,7 +138,7 @@ export default function AdvancedAnnualReports() {
                 <th>Dividend Yield</th>
                 <th>P/E Ratio</th>
                 <th>Market Cap</th>
-                <th>Actions</th>
+                {/* <th>Actions</th> */}
               </tr>
             </thead>
             <tbody>
@@ -151,10 +151,10 @@ export default function AdvancedAnnualReports() {
                   <td>{report.dividendYield.toFixed(1)}%</td>
                   <td>{report.peRatio.toFixed(1)}</td>
                   <td>{formatCurrency(report.marketCap)}</td>
-                  <td>
+                  {/* <td>
                     <Button variant="outline-primary" size="sm" className="mr-2">View</Button>
                     <Button variant="outline-secondary" size="sm">Download</Button>
-                  </td>
+                  </td> */}
                 </tr>
               ))}
             </tbody>
