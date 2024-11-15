@@ -438,7 +438,7 @@ export const SidebarMenu: SidebarMenuTypes[] = [
       { title: "User Statistics", link: `/dashboards/portfolio/user-statistics`, type: "link" },
       { title: "Watchlist", link: `/dashboards/portfolio/watchlist`, type: "link" },
       { title: "Sentiment Analysis", link: `/pages/authentication/maintenance`, type: "link" },
-      { title: "Suggested Area", link: `/dashboards/portfolio/suggestions`, type: "link" },
+      { title: "Suggested Area", link: `/pages/authentication/maintenance`, type: "link" },
       { title: "Future Heat Map", link: `/dashboards/portfolio/future-heat-map`, type: "link" },
       { title: "Top Traded Com", link: `/dashboards/portfolio/top-traded-commodity`, type: "link" },  
       { title: "Most Active Com", link: `/dashboards/portfolio/most-active-commodity`, type: "link" }
@@ -511,18 +511,18 @@ export const SidebarMenu: SidebarMenuTypes[] = [
   //     { title: "Allow Advertisement", link: `/settings/advertisement`, type: "link" }
   //   ]
   // },
-  // {
-  //   title: "Help",
-  //   svgIcon: "help",
-  //   title1: "Help",
-  //   subMenu: [
-  //     { title: "FAQs", link: `/help/faqs`, type: "link" },
-  //     { title: "Support", link: `/help/support`, type: "link" },
-  //     { title: "Documentation", link: `/help/documentation`, type: "link" },
-  //     { title: "Terms & Conditions", link: `/help/terms`, type: "link" },
-  //     // { title: "Chatbot", link: `/help/chatbot`, type: "link" }
-  //   ]
-  // },
+  {
+    title: "Help",
+    svgIcon: "help",
+    title1: "Help",
+    subMenu: [
+      { title: "FAQs", link: `/help/faqs`, type: "link" },
+      { title: "Support", link: `/help/support`, type: "link" },
+      { title: "Documentation", link: `/help/documentation`, type: "link" },
+      { title: "Terms & Conditions", link: `/help/terms`, type: "link" },
+      // { title: "Chatbot", link: `/help/chatbot`, type: "link" }
+    ]
+  },
   // {
   //   title: "Fingenie",
   //   svgIcon: "fingenie-icon",

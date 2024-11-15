@@ -93,8 +93,11 @@ export default function FutureHitMap() {
                               width: '100%',
                               height: '48px',
                               backgroundColor: getColorForValue(value),
+                              display:"flex",
+                              justifyContent:"center",
+                              alignItems:"center"
                             }}
-                          />
+                          >{value}</div>
                         </OverlayTrigger>
                       </td>
                     ))}

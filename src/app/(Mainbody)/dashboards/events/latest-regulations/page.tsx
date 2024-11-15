@@ -21,7 +21,7 @@ const mockRegulations: Record<RegulatorType, Regulation[]> = {
       title: 'Guidelines on Digital Lending',
       date: '2023-07-15',
       summary: 'New guidelines for digital lending platforms to ensure fair practices and consumer protection.',
-      pdfUrl: '#'
+      pdfUrl: './RBI.pdf'
     },
     {
       id: 'rbi2',
@@ -44,21 +44,21 @@ const mockRegulations: Record<RegulatorType, Regulation[]> = {
       title: 'Framework for Social Stock Exchange',
       date: '2023-07-18',
       summary: 'Introduction of a framework for the Social Stock Exchange to facilitate funding for social enterprises.',
-      pdfUrl: '#'
+      pdfUrl: 'https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0'
     },
     {
       id: 'sebi2',
       title: 'Revised Norms for Mutual Fund Investments',
       date: '2023-07-12',
       summary: 'Updated norms for mutual fund investments to ensure better risk management and investor protection.',
-      pdfUrl: '#'
+      pdfUrl: 'https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0'
     },
     {
       id: 'sebi3',
       title: 'Guidelines on ESG Disclosures',
       date: '2023-07-08',
       summary: 'New guidelines for listed entities on Environmental, Social, and Governance (ESG) disclosures.',
-      pdfUrl: '#'
+      pdfUrl: 'https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0'
     },
   ],
   Federal: [
@@ -67,21 +67,21 @@ const mockRegulations: Record<RegulatorType, Regulation[]> = {
       title: 'Amendments to Regulation D',
       date: '2023-07-20',
       summary: 'Changes to Regulation D affecting reserve requirements for depository institutions.',
-      pdfUrl: '#'
+      pdfUrl: 'https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm'
     },
     {
       id: 'fed2',
       title: 'Updates to the Community Reinvestment Act',
       date: '2023-07-14',
       summary: 'Modernization of the Community Reinvestment Act to reflect changes in the banking industry.',
-      pdfUrl: '#'
+      pdfUrl: 'https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm'
     },
     {
       id: 'fed3',
       title: 'Revisions to Capital Planning Requirements',
       date: '2023-07-07',
       summary: 'Updated capital planning and stress testing requirements for large bank holding companies.',
-      pdfUrl: '#'
+      pdfUrl: 'https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm'
     },
   ],
 }

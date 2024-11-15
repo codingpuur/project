@@ -10,7 +10,7 @@ import SVG from "@/utils/CommonSvgIcon/SVG";
 import { SidebarMenu } from "@/Data/Layout/Sidebar/Menu";
 import { PropsTypes } from "@/Types/SideBarTypes";
 import { BotMessageSquare, BriefcaseBusiness, CalendarCheck, ChartCandlestick, ClipboardMinus, UserPen } from "lucide-react";
-import { BookOpen } from "react-feather";
+import { BookOpen, Info } from "react-feather";
 
 const SidebarMain = ({setOpen,open}:PropsTypes) => {
   const { t } = useTranslation("common");
@@ -34,7 +34,8 @@ const SidebarMain = ({setOpen,open}:PropsTypes) => {
     "chat": <BotMessageSquare />,
     "report":   <ClipboardMinus />,
     "profile":<UserPen />,
-    "learning":<BookOpen />
+    "learning":<BookOpen />,
+    "help":  <Info />
 
   }
 

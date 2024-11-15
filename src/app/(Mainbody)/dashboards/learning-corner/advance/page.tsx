@@ -102,7 +102,7 @@ export default function AdvancedTrading() {
                   </li>
                 ))}
               </ul>
-              <div className="card mt-3">
+              {/* <div className="card mt-3">
                 <div className="card-header">Position Size Calculator</div>
                 <div className="card-body">
                   <div className="mb-3">
@@ -127,7 +127,7 @@ export default function AdvancedTrading() {
                   </div>
                   <p className="fw-bold">Maximum Position Size: ${calculatePositionSize()}</p>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="tab-pane fade" id="options" role="tabpanel">
