@@ -18,70 +18,70 @@ const mockRegulations: Record<RegulatorType, Regulation[]> = {
   RBI: [
     {
       id: 'rbi1',
-      title: 'Guidelines on Digital Lending',
+      title: 'Monetary Policy Statement',
       date: '2023-07-15',
-      summary: 'New guidelines for digital lending platforms to ensure fair practices and consumer protection.',
-      pdfUrl: './RBI.pdf'
+      summary: '',
+      pdfUrl: 'https://www.rbi.org.in/scripts/annualpolicy.aspx'
     },
     {
       id: 'rbi2',
-      title: 'Revised Regulatory Framework for NBFCs',
+      title: 'Circulars',
       date: '2023-07-10',
-      summary: 'Updated regulatory framework for Non-Banking Financial Companies to strengthen the financial sector.',
-      pdfUrl: '#'
+      summary: '',
+      pdfUrl: 'https://rbi.org.in/Scripts/BS_CircularIndexDisplay.aspx'
     },
     {
       id: 'rbi3',
-      title: 'Tokenisation of Card Transactions',
+      title: 'Press Releases',
       date: '2023-07-05',
-      summary: 'Extension of timeline for tokenisation of card transactions to enhance digital payment security.',
-      pdfUrl: '#'
+      summary: '',
+      pdfUrl: 'https://www.rbi.org.in/commonman/English/scripts/pressreleases.aspx'
     },
   ],
   SEBI: [
     {
       id: 'sebi1',
-      title: 'Framework for Social Stock Exchange',
+      title: 'SEBI Investor Guidelines',
       date: '2023-07-18',
-      summary: 'Introduction of a framework for the Social Stock Exchange to facilitate funding for social enterprises.',
-      pdfUrl: 'https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0'
+      summary: '',
+      pdfUrl: 'https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=5&smid=0'
     },
     {
       id: 'sebi2',
-      title: 'Revised Norms for Mutual Fund Investments',
+      title: 'Circulars',
       date: '2023-07-12',
-      summary: 'Updated norms for mutual fund investments to ensure better risk management and investor protection.',
+      summary: '',
       pdfUrl: 'https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0'
     },
     {
       id: 'sebi3',
-      title: 'Guidelines on ESG Disclosures',
+      title: 'Press Releases',
       date: '2023-07-08',
-      summary: 'New guidelines for listed entities on Environmental, Social, and Governance (ESG) disclosures.',
-      pdfUrl: 'https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=1&ssid=7&smid=0'
+      summary: '',
+      pdfUrl: 'https://www.sebi.gov.in/sebiweb/home/HomeAction.do?doListing=yes&sid=6&ssid=23&smid=0'
     },
   ],
   Federal: [
     {
       id: 'fed1',
-      title: 'Amendments to Regulation D',
-      date: '2023-07-20',
-      summary: 'Changes to Regulation D affecting reserve requirements for depository institutions.',
-      pdfUrl: 'https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm'
+      title: 'Federal Monetary policy',
+      date: '2023-07-14',
+      summary: '',
+      pdfUrl: 'https://www.federalreserve.gov/monetarypolicy.htm'
     },
     {
       id: 'fed2',
-      title: 'Updates to the Community Reinvestment Act',
-      date: '2023-07-14',
-      summary: 'Modernization of the Community Reinvestment Act to reflect changes in the banking industry.',
-      pdfUrl: 'https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm'
+      title: 'FOMC Calendars, statements, and minutes',
+      date: '2023-07-20',
+      summary: '',
+      pdfUrl: 'https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm'
     },
     {
       id: 'fed3',
-      title: 'Revisions to Capital Planning Requirements',
+      title: 'Press Releases',
       date: '2023-07-07',
-      summary: 'Updated capital planning and stress testing requirements for large bank holding companies.',
-      pdfUrl: 'https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm'
+      summary: '',
+      pdfUrl: 'https://www.federalreserve.gov/newsevents/pressreleases.htm'
     },
   ],
 }
