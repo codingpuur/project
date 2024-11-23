@@ -4,7 +4,7 @@ import ReactApexChart from 'react-apexcharts'
 import { SteplineChart } from '@/utils/Constant'
 import { apexSteplineChart } from '@/Data/Charts/ApexChartsData'
 
-const SteplineChartClass = () => {
+const SteplineChartClass = ({data}:any) => {
   return (
     <Col sm={12} xl={6} className="box-col-12">
       <Card>

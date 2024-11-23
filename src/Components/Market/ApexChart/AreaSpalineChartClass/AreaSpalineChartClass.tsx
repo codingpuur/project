@@ -4,7 +4,7 @@ import CommonHeader from '@/Common/CommonHeader'
 import { AreaSpalineChart } from '@/utils/Constant'
 import { areaSpaline } from '@/Data/Charts/ApexChartsData'
 
-const AreaSpalineChartClass = () => {
+const AreaSpalineChartClass = ({data}:any) => {
   return (
     <Col sm={12} xl={6} className='box-col-6'>
         <Card>

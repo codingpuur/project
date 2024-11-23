@@ -1,22 +1,60 @@
+"use client"
+
 import { Col, Container, Row } from 'reactstrap'
 import SVG from '../../utils/CommonSvgIcon/SVG'
 import { usePathname } from 'next/navigation';
+import ChannelTicker from './ChannelTicker';
+import './footer.css'
+import StockPriceTicker from './StockPriceTicker';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 const Footer = () => {
   const pathname = usePathname();
   const darkFooter = pathname === `/pagelayout/footerdark` ? "footer-dark" : "";
   const fixedFooter = pathname === `/pagelayout/footerfixed` ? "footer-fix" : "";
+  const [tickerItems,setTickerItems]= useState([])
+  // const tickerItems = [
+  //   'Breaking News: Stock Market Up by 3%!',
+  //   'Tech Update: New AI Chip Released',
+  //   'Travel Alert: Storm Expected in Florida',
+  //   'Sports: Local Team Wins Gold',
+  // ];
+
+useEffect(()=>{
+  try{
+    axios.get('https://newsapi.org/v2/top-headlines?language=en&apiKey=deccd21183444d9f968fa8fe28a713eb').then((res)=>setTickerItems(res.data.articles))
+  }
+  catch(e){
+    console.log(e)
+  }
+},[])
+
+  const stocks = [
+    { symbol: 'AAPL', price: 175.45, change: 1.2 },
+    { symbol: 'GOOGL', price: 2875.65, change: -0.8 },
+    { symbol: 'TSLA', price: 725.30, change: 2.5 },
+    { symbol: 'AMZN', price: 3450.25, change: 0.7 },
+  ];
   return (
-    <footer className={`footer ${darkFooter} ${fixedFooter}`}>
-        <Container fluid >
+    <footer style={{ margin:"0px" , padding:"0px"}} className={`footer ${darkFooter} ${fixedFooter}`}>
+        <Container style={{margin:"0px" , padding:"0px" , width:"100%"}} fluid >
+        <Row>
+          <Col>
+            <ChannelTicker items={tickerItems} speed={20} />
+          </Col>
+        </Row>
             <Row>
-                <Col md={6} className="footer-copyright">
+                {/* <Col md={6} className="footer-copyright">
                     <p className="mb-0">Copyright 2024 © Cion theme by pixelstrap.</p>
                 </Col> 
                 <Col md={6}>
                     <p className="float-end mb-0">Hand crafted &amp; made with
                         <SVG iconId='heart' className="footer-icon" />
                     </p>
+                </Col> */}
+                <Col>
+                <StockPriceTicker stocks={stocks} speed={20} />
                 </Col>
             </Row>
         </Container>

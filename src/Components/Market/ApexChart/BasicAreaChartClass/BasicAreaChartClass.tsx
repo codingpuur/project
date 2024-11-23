@@ -26,10 +26,12 @@ import { apexAreaChart } from "@/Data/Charts/ApexChartsData"; // Assuming this c
 
 const AreaChartClass = ({ data }: any) => {
   // Format data to the structure required by ApexCharts for area chart
-  const formattedData = data?.slice(0, 50).map((item: any) => ({
-    x: new Date(item.date).getTime(),  // Convert date to timestamp
-    y: item.close  // Use 'close' as the value to display
-  }));
+
+  const formattedData = Object.entries(data || {}).map(([date, value]:any) => ({
+    x: new Date(date).getTime(), // Convert date to timestamp
+    y: value.c                  // Use 'close' as the value to display
+}));
+
 
   // Update ApexChart options to use formatted data
   const chartOptions = {
@@ -40,7 +42,7 @@ const AreaChartClass = ({ data }: any) => {
   };
 
   return (
-    <Col sm={12} xl={6} className="box-col-12">
+    <Col sm={12} xl={12} className="box-col-12">
       <Card>
         <CardBody>
           <div id="area-chart">

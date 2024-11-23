@@ -34,13 +34,18 @@ import { apexCandleStickCharts } from "@/Data/Charts/ApexChartsData"; // Assumin
 
 const CandlestickChartClass = ({data}: any) => {
   // Format data to the structure required by ApexCharts
-  const formattedData = data?.slice(0, 50)?.map((item: any) => [
-    new Date(item.date).getTime(), // Convert date to timestamp
-    item.open,
-    item.low,
-    item.high,
-    item.close
-  ]);
+
+ 
+ 
+
+const formattedData = Object.entries(data || {}).slice(0,50).map(([date, value]:any) => ([
+   new Date(date).getTime(), // Convert date to timestamp
+  value.o,                  // Open
+  value.l,                  // Low
+  value.h,                  // High
+  value.c                   // Close                /
+]));
+
 
   // Update ApexChart options to use formatted data
   const chartOptions = {

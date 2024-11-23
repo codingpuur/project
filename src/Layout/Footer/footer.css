@@ -1,0 +1,98 @@
+.footer-ticker {
+    overflow: hidden;
+    background: linear-gradient(90deg, #00c6ff, #0072ff); /* Bright blue gradient */
+    /* padding: 15px 0; */
+    border-radius: 0px; /* Modern rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced depth with shadow */
+    position: relative;
+  }
+  
+  .ticker {
+    display: flex;
+    align-items: center; /* Align items centrally */
+    white-space: nowrap;
+    animation: scroll 15s linear infinite; /* Smooth scrolling effect */
+  }
+  
+  .ticker-item {
+    margin-right: 50px;
+    font-size: 1.2rem; /* Slightly larger for readability */
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Text glow */
+    position: relative;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .ticker-item:hover {
+    transform: scale(1); /* Enlarged hover effect */
+    /* Gold-like hover color */
+    cursor: pointer;
+   
+  }
+  
+  /* Adding a glow effect to the ticker area */
+  .footer-ticker::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+    opacity: 0.7;
+    z-index: 1;
+    pointer-events: none; /* Allows interactions only with content */
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+
+  .stock-price-ticker {
+    overflow: hidden;
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* Modern gradient */
+    padding: 15px 0;
+    border-radius: 0px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ticker {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll linear infinite;
+    align-items: center;
+  }
+  
+  .ticker-item {
+    margin-right: 40px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .stock-up {
+    color: #4caf50; /* Green for positive change */
+  }
+  
+  .stock-down {
+    color: #f44336; /* Red for negative change */
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
