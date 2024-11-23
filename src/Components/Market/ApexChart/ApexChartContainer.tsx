@@ -293,8 +293,8 @@ const ApexChartContainer = ({ name }: any) => {
               <CandlestickChartClass data={chartData} />
               {/* <AreaSpalineChartClass data={chartData} /> */}
               {/* <Line data={chartData} options={options} /> */}
-<LineChartClass data={chartDataFut?.CE}/>
-<LineChartClass data={chartDataFut?.PE}/>
+<LineChartClass data={chartDataFut?.CE} title="Call Option Price Movement"/>
+<LineChartClass data={chartDataFut?.PE} title="Put Option Price Movement"/>
             
 <BasicAreaChartClass data={chartData} />
               <DerivativeAnalysisTable commodities={lowerCaseName} />

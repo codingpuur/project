@@ -433,7 +433,7 @@ export const SidebarMenu: SidebarMenuTypes[] = [
     svgIcon: "portfolio",
     title1: "Portfolio",
     subMenu: [
-      { title: "Current Holding", link: `/dashboards/portfolio/current-holding`, type: "link" },
+      // { title: "Current Holding", link: `/dashboards/portfolio/current-holding`, type: "link" },
       { title: "History", link: `/dashboards/portfolio/history`, type: "link" },
       { title: "User Statistics", link: `/dashboards/portfolio/user-statistics`, type: "link" },
       { title: "Watchlist", link: `/dashboards/portfolio/watchlist`, type: "link" },

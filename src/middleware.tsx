@@ -35,7 +35,7 @@ export function middleware(request: NextRequest) {
 
   // If already authenticated and trying to access auth routes, redirect to dashboard
   if (path.split("/")[1] === "auth" && request.cookies.has("cion_token")) {
-    return NextResponse.redirect(new URL(`/dashboards/portfolio/current-holding`, request.url));
+    return NextResponse.redirect(new URL(`/dashboards/portfolio/sentiment-analysis`, request.url));
   }
 }
 

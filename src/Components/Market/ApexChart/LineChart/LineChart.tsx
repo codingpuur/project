@@ -37,9 +37,10 @@ interface Data {
 // Define the component props interface
 interface LineChartClassProps {
   data: Data; // The 'data' prop should match the 'Data' interface
+  title:any
 }
 
-const LineChartClass = ({data}:LineChartClassProps) => {
+const LineChartClass = ({data,title}:LineChartClassProps ,) => {
 
   
 
@@ -92,7 +93,7 @@ const formattedData = data
   return (
     <Col sm={12} xl={6} className="box-col-12">
       <Card>
-        <CommonHeader title="Stepline Chart" headClass="pb-0" />
+        <CommonHeader title={title} headClass="pb-0" />
         <CardBody>
           <div id="stepline">
             <Line data={chartData} options={options} />

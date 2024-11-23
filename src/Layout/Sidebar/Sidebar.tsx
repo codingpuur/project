@@ -11,7 +11,7 @@ const Sidebar : React.FC<PropsTypes>= ({setOpen,open}) => {
     <div className={`sidebar-wrapper ${open ? "sidebar-default" : ""} ${toggleSidebar ? "close_icon" : ""}`} >
         <div>
             <div className="logo-wrapper">
-                <Link href={`/dashboards/portfolio/current-holding`}>
+                <Link href={`/dashboards/portfolio/sentiment-analysis`}>
                     <Image className="img-flui" src={`${ImagePath}/logo/logo.png`}  alt="" height={40} width={80}/>
                 </Link>
                 <div className="back-btn">
