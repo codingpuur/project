@@ -21,21 +21,38 @@ const Footer = () => {
   //   'Sports: Local Team Wins Gold',
   // ];
 
+  const [stocks,setstocks]=useState([])
+
 useEffect(()=>{
+  handlesetticeritem();
+  handlesetstocks();
+
+},[]);
+const handlesetticeritem = ()=>{
   try{
-    axios.get('https://newsapi.org/v2/top-headlines?language=en&apiKey=deccd21183444d9f968fa8fe28a713eb').then((res)=>setTickerItems(res.data.articles))
+     axios.get('https://newsapi.org/v2/top-headlines?language=en&apiKey=deccd21183444d9f968fa8fe28a713eb').then((res)=>setTickerItems(res.data.articles))
   }
   catch(e){
     console.log(e)
   }
-},[])
 
-  const stocks = [
-    { symbol: 'AAPL', price: 175.45, change: 1.2 },
-    { symbol: 'GOOGL', price: 2875.65, change: -0.8 },
-    { symbol: 'TSLA', price: 725.30, change: 2.5 },
-    { symbol: 'AMZN', price: 3450.25, change: 0.7 },
-  ];
+}
+const handlesetstocks = ()=>{
+  try{
+     axios.get('https://api.stockdata.org/v1/data/quote?symbols=AAPL%2CTSLA%2CMSFT&api_token=CbFOVraAbW9pW3aVWiy1r6OVX5IqgNkzIebmK1MU').then((res)=>setstocks(res.data.data))
+  }
+  catch(e){
+    console.log(e)
+  }
+
+}
+
+  // const stocks = [
+  //   { symbol: 'AAPL', price: 175.45, change: 1.2 },
+  //   { symbol: 'GOOGL', price: 2875.65, change: -0.8 },
+  //   { symbol: 'TSLA', price: 725.30, change: 2.5 },
+  //   { symbol: 'AMZN', price: 3450.25, change: 0.7 },
+  // ];
   return (
     <footer style={{ margin:"0px" , padding:"0px"}} className={`footer ${darkFooter} ${fixedFooter}`}>
         <Container style={{margin:"0px" , padding:"0px" , width:"100%"}} fluid >
