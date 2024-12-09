@@ -216,7 +216,7 @@ const ApexChartContainer = ({ name }: any) => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        `http://159.89.167.56/api/historical-data/?symbol=${name}`, // Adjust URL as needed
+        `https://nazariya-test.vercel.app/api/historical-data/${name}`, // Adjust URL as needed
         {
           method: "POST", // Use POST method
           headers: {
@@ -237,7 +237,7 @@ const ApexChartContainer = ({ name }: any) => {
   const fetchDatafut = async () => {
     try {
       const response = await fetch(
-        `http://159.89.167.56/api/volatility-data/?symbol=${name}`, // Adjust URL as needed
+        `https://nazariya-test.vercel.app/api/volatility-data/${name}`, // Adjust URL as needed
         {
           method: "POST", // Use POST method
           headers: {

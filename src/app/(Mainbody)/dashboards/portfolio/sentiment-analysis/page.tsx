@@ -162,10 +162,10 @@ export default function Home() {
   useEffect(() => {
     // Fetch sentiment analysis for each article title
     newsItems.forEach((article) => {
-      axios.post('http://159.89.167.56/api/analyze-sentiment/', { text: article.title })
+      axios.post('https://nazariya-test.vercel.app/api/analyze-sentiment/', { text: article.title })
         .then((response) => {
           setSentiments((prev) => ({
-            ...prev,
+            ...prev,  
             [article.title]: {
               text: response.data.sentiment,
               score: response.data.score,
