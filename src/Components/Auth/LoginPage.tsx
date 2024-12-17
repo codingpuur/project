@@ -15,10 +15,11 @@ const LoginPage = () => {
   const [email, setEmail] = useState("test123@gmail.com");
   const [password, setPassword] = useState("Test@123");
   const router = useRouter();
-
+  Cookies.set("token", JSON.stringify(true));
   const SimpleLoginHandle = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     window.location.reload();
+
     if (email === "test123@gmail.com" && password === "Test@123") {
       Cookies.set("cion_token", JSON.stringify(true));
       toast.success("Login Success...!", {
