@@ -20,6 +20,7 @@ import DerivativeAnalysisTable from "./DerivativeAnalysisTable/DerivativeAnalysi
 import StockTable from "./StockTable/StockTable";
 import SectorPerformanceChart from "./SectorPerformanceChart/SectorPerformanceChart";
 import OptionChainTable from "./OptionChainTable/OptionChainTable";
+import CandlestickChartClass2 from "./CandlestickChartClass/CandlestickChartClass2";
 
 const ApexChartStokes = ({name}:any) => {
   const optionData = [
@@ -76,7 +77,8 @@ const ApexChartStokes = ({name}:any) => {
           <PieChartClass />
           <DonutChartClass />
           <MixedChartClass /> */}
-          <CandlestickChartClass />
+          <CandlestickChartClass2/>
+       
           {/* <DerivativeAnalysisTable/> */}
           {/* <RadarChartClass /> */}
           {/* <RadialBarChartClass /> */}

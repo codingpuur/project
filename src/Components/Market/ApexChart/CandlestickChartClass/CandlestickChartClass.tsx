@@ -2,6 +2,7 @@ import { Card, CardBody, Col } from "reactstrap";
 import ReactApexChart from "react-apexcharts";
 import { apexCandleStickCharts } from "@/Data/Charts/ApexChartsData"; // Assuming this contains default chart options
 
+
 const CandlestickChartClass = ({ data }: any) => {
   // Format data to the structure required by ApexCharts
 

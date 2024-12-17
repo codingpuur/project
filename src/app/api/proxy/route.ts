@@ -2,6 +2,7 @@ import axios from "axios";
 import { NextRequest } from "next/server.js";
 
 
+
 export async function GET(request: NextRequest) {
     try {
         // HTTP request to external URL

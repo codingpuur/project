@@ -30,7 +30,7 @@ useEffect(()=>{
 },[]);
 const handlesetticeritem = ()=>{
   try{
-     axios.get('https://newsapi.org/v2/top-headlines?language=en&apiKey=deccd21183444d9f968fa8fe28a713eb').then((res)=>setTickerItems(res.data.articles))
+     axios.get('https://api.stockdata.org/v1/news/all?symbols=TSLA%2CAMZN%2CMSFT&filter_entities=true&language=en&api_token=CbFOVraAbW9pW3aVWiy1r6OVX5IqgNkzIebmK1MU').then((res)=>setTickerItems(res.data.data))
   }
   catch(e){
     console.log(e)
