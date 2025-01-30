@@ -258,7 +258,7 @@ const ApexChartContainer = ({ name }: any) => {
 
   // Fetch data from the API
   useEffect(() => {
-    setModalOpen(true);
+    
   
     fetchData();
     fetchDatafut();
@@ -268,7 +268,7 @@ const ApexChartContainer = ({ name }: any) => {
       setModalOpen(true);
       fetchData();
       fetchDatafut();
-    }, 100000); // Adjust interval as needed
+    }, 1500000); // Adjust interval as needed
   
     return () => clearInterval(interval); // Clean up the interval on unmount
   }, [name]);
