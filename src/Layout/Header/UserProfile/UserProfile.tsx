@@ -10,7 +10,7 @@ const UserProfile = () => {
         <Image className="b-r-25" src={`${ImagePath}/dashboard/profile.png`} alt="" height={40} width={40}/>
         <div className="flex-grow-1 user">
           {/* <span>{HelenWalter}</span> */}
-          <span>shubham</span>
+          <span>Admin</span>
           <p className="mb-0 font-nunito">
             {Admin} <i className="middle fa fa-angle-down"></i>
           </p>

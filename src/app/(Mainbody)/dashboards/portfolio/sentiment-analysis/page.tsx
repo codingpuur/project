@@ -99,6 +99,8 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
+
+
 // Define types for news items and sentiments
 interface NewsItem {
   title: string;
@@ -116,8 +118,13 @@ interface Sentiment {
 // Component to display sentiment for news items
 function NewsSentiment({ headline, sentiment, score }: { headline: NewsItem, sentiment: string, score: any }) {
   const formattedScore = !isNaN(score) ? score.toFixed(2) : '0.00';
+
+
   return (
     <div className="card">
+
+
+
       <img
         src={headline.image_url}
         className="card-img-top"
@@ -180,6 +187,7 @@ export default function Home() {
 
   return (
     <main className="container min-vh-100 d-flex flex-column align-items-center justify-content-center py-5 bg-ligh">
+
       <h1 className="display-4 mb-4">Today's News Sentiment</h1>
       <div className="row g-4">
         {newsItems.map((headline, index) => (
