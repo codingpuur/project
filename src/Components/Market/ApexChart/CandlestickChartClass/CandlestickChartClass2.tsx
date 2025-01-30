@@ -17,15 +17,20 @@ const CandlestickChartClass2 = ({ data }: any) => {
       value.c, // Close                /
     ]);
 
-  // Update ApexChart options to use formatted data
-//   const chartOptions = {
-//     ...apexCandleStickCharts, // Spread existing options
-//     series: [
-//       {
-//         data: formattedData, // Replace default series with formatted data
-//       },
-//     ],
-//   };
+
+    const updatedSeries = apexCandleStickCharts2.series?.map((seriesItem:any) => {
+      return {
+        ...seriesItem,
+        data: seriesItem.data.map((dataPoint:any,index:any) => {
+          return {
+            ...dataPoint,
+            x: new Date(2025, 0, 29,0, index ), // January is 0 in JavaScript Date
+          };
+        }),
+      };
+    });
+    
+    console.log(updatedSeries);
 
   return (
     <Col sm={12} xl={12} className="box-col-12">
@@ -34,7 +39,7 @@ const CandlestickChartClass2 = ({ data }: any) => {
           <div id="candlestick">
             <ReactApexChart
               options={apexCandleStickCharts2}
-              series={apexCandleStickCharts2.series}
+              series={updatedSeries}
               type="candlestick"
               height={350}
             />

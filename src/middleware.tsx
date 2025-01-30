@@ -24,6 +24,9 @@ export function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
 
   // Allow access to the root ("/") to display the index.html file in the public folder
+  if (path === "*") {
+    return NextResponse.redirect(new URL("/index.html", request.url));
+  }
   if (path === "/") {
     return NextResponse.redirect(new URL("/index.html", request.url));
   }
