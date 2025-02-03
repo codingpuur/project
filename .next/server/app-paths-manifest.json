@@ -1,6 +1,5 @@
 {
   "/(pages)/auth/login/page": "app/(pages)/auth/login/page.js",
   "/(Mainbody)/dashboards/markets/commodity/[name]/page": "app/(Mainbody)/dashboards/markets/commodity/[name]/page.js",
-  "/(Mainbody)/dashboards/portfolio/current-holding/page": "app/(Mainbody)/dashboards/portfolio/current-holding/page.js",
   "/(Mainbody)/dashboards/home/page": "app/(Mainbody)/dashboards/home/page.js"
 }

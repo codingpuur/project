@@ -30,7 +30,7 @@ useEffect(()=>{
 },[]);
 const handlesetticeritem = ()=>{
   try{
-     axios.get('https://api.stockdata.org/v1/news/all?symbols=TSLA%2CAMZN%2CMSFT&filter_entities=true&language=en&api_token=CbFOVraAbW9pW3aVWiy1r6OVX5IqgNkzIebmK1MU').then((res)=>setTickerItems(res.data.data))
+     axios.get('https://api.stockdata.org/v1/news/all?symbols=TSLA%2CAMZN%2CMSFT&filter_entities=true&language=en&api_token=t06P6NdrumAj1691x47ZPzuLL23LNYnoBdA8UgUg').then((res)=>setTickerItems(res.data.data))
   }
   catch(e){
     console.log(e)
@@ -39,7 +39,7 @@ const handlesetticeritem = ()=>{
 }
 const handlesetstocks = ()=>{
   try{
-     axios.get('https://api.stockdata.org/v1/data/quote?symbols=AAPL%2CTSLA%2CMSFT&api_token=CbFOVraAbW9pW3aVWiy1r6OVX5IqgNkzIebmK1MU').then((res)=>setstocks(res.data.data))
+     axios.get('https://api.stockdata.org/v1/data/quote?symbols=AAPL%2CTSLA%2CMSFT&api_token=t06P6NdrumAj1691x47ZPzuLL23LNYnoBdA8UgUg').then((res)=>setstocks(res.data.data))
   }
   catch(e){
     console.log(e)

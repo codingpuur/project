@@ -281,7 +281,7 @@ const ApexChartContainer = ({ name }: any) => {
     setModalOpen(!modalOpen);
   };
 
-  console.log(chartDataFut) 
+ 
 
   return (
     <>

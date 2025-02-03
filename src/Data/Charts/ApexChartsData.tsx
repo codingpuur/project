@@ -1067,6 +1067,8 @@ export var apexCandleStickCharts2:ApexOptions = {
             },
         ]
     }],
+
+    
     title: {
         text: 'CandleStick Chart',
         align: 'left'

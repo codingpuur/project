@@ -123,9 +123,7 @@ const CandlestickChartClass = ({ data }: any) => {
     .filter(([timestamp]) => timestamp >= last24Hours) // Keep only last 24 hours
     .sort((a, b) => a[0] - b[0]);
 
-  if (formattedData.length === 0) {
-    return null; // No data, return nothing
-  }
+
 
   const roundToDecimal = (value: number, decimals: number = 2) => {
     return parseFloat(value.toFixed(decimals));
@@ -170,8 +168,11 @@ const CandlestickChartClass = ({ data }: any) => {
         },
       },
     },
-    series: [{ data: filledData }],
+    series: [{ data: formattedData.length === 0 ?[]: filledData }],
   };
+
+
+
 
   return (
     <Col sm={12} xl={12} className="box-col-12">
